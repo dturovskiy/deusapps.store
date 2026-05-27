@@ -3,101 +3,297 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-lang="title">Deus Apps Store</title>
+  <title>DeusApps — practical tools, apps, and workflow utilities</title>
+  <meta name="description" content="DeusApps is a hub for practical apps, developer tools, Linux automation, game/server utilities, 3D workflow helpers, SaaS foundations, and experiments.">
+  <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="DeusApps">
+  <meta property="og:description" content="Practical tools, apps, and workflow utilities by Denys Turovskiy.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="logo.svg">
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
-  <script src="translations.js"></script>
-  <meta name='freelancehunt' content='efd60025ba28f75'>
-  
+  <link rel="stylesheet" href="styles.css?v=qr-layout-smooth-1">
+  <script src="translations.js?v=qr-layout-smooth-1" defer></script>
+  <script src="script.js?v=qr-layout-smooth-1" defer></script>
+  <meta name="freelancehunt" content="efd60025ba28f75">
 </head>
 <body>
-  <!-- Кнопка переключення теми -->
-  <button id="theme-toggle" aria-label="Переключити тему">
-    <span id="theme-icon">🌙</span>
-  </button>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="DeusApps home">
+        <img src="logo.svg" alt="DeusApps logo" class="brand-logo">
+        <span class="brand-name">DeusApps</span>
+      </a>
 
-  <div class="language-selector">
-    <button id="language-toggle" aria-label="Переключити мову">
-      <span id="language-icon">🌐</span>
-    </button>
-    <ul id="language-menu" class="language-menu">
-      <!-- Список мов буде додано динамічно -->
-    </ul>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#downloads" data-i18n="nav.downloads">Downloads</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="toolbar">
+        <button id="theme-toggle" class="icon-button" type="button" aria-label="Toggle theme">
+          <span id="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+
+        <div class="language-selector">
+          <button id="language-toggle" class="icon-button" type="button" aria-label="Change language">
+            <span aria-hidden="true">🌐</span>
+          </button>
+          <ul id="language-menu" class="language-menu" aria-label="Language menu"></ul>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-panel">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Independent software lab</p>
+          <h1 data-i18n="hero.title">Practical tools for servers, workflows, and app experiments.</h1>
+          <p class="hero-lead" data-i18n="hero.lead">DeusApps collects useful projects: Android utilities, Linux automation, game server tooling, 3D workflow helpers, SaaS foundations, and prototype apps.</p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#projects" data-i18n="hero.primaryCta">Explore projects</a>
+            <a class="button secondary" href="https://github.com/dturovskiy" target="_blank" rel="noopener" data-i18n="hero.githubCta">GitHub profile</a>
+          </div>
+
+          <div class="hero-badges" aria-label="Core areas">
+            <span>Python/Linux</span>
+            <span>CLI/TUI</span>
+            <span>TypeScript SaaS</span>
+            <span>Unity/C#</span>
+            <span>Blender/SketchUp</span>
+            <span>Android APK</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="projects.eyebrow">GitHub portfolio</p>
+          <h2 data-i18n="projects.title">Current GitHub projects</h2>
+          <p data-i18n="projects.lead">Public tools, app projects, and technical experiments by DeusApps.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="tag" data-i18n="tags.linux">Linux tooling</span>
+              <span class="status live" data-i18n="status.live">Live</span>
+            </div>
+            <h3>armactl</h3>
+            <p data-i18n="project.armactl">Python/Linux TUI for installing, repairing, managing, and monitoring Arma Reforger Dedicated Server.</p>
+            <div class="card-links">
+              <a href="https://dturovskiy.github.io/armactl/" target="_blank" rel="noopener" data-i18n="links.website">Website</a>
+              <a href="https://github.com/dturovskiy/armactl" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://github.com/dturovskiy/armactl/releases" target="_blank" rel="noopener" data-i18n="links.releases">Releases</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="tag" data-i18n="tags.workflow">3D workflow</span>
+              <span class="status" data-i18n="status.public">Public</span>
+            </div>
+            <h3>DeusApps Blender OBJ Importer Lite</h3>
+            <p data-i18n="project.objImporter">Geometry-only Blender OBJ importer for SketchUp workflows, with import presets, orientation fixes, and cleanup helpers.</p>
+            <div class="card-links">
+              <a href="https://github.com/dturovskiy/deusapps-blender-obj-importer-lite" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="tag" data-i18n="tags.saas">SaaS architecture</span>
+              <span class="status" data-i18n="status.active">Active</span>
+            </div>
+            <h3>MIA Platform</h3>
+            <p data-i18n="project.mia">TypeScript modular SaaS foundation for municipal administrative workflows, clean app architecture, and internal platform experiments.</p>
+            <div class="card-links">
+              <a href="https://github.com/dturovskiy/mia-platform" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="tag" data-i18n="tags.gameDev">Game prototypes</span>
+              <span class="status" data-i18n="status.public">Public</span>
+            </div>
+            <h3>Unity prototypes</h3>
+            <p data-i18n="project.unity">Gameplay experiments and Unity/C# prototypes, including miner, tower, and arcade-style project work.</p>
+            <div class="card-links">
+              <a href="https://github.com/dturovskiy/Miner_Unity" target="_blank" rel="noopener">Miner_Unity</a>
+              <a href="https://github.com/dturovskiy/Tower-Cube" target="_blank" rel="noopener">Tower-Cube</a>
+              <a href="https://github.com/dturovskiy/Space-SHUMP-Plus" target="_blank" rel="noopener">Space-SHUMP-Plus</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="tag" data-i18n="tags.data">Data tooling</span>
+              <span class="status" data-i18n="status.public">Public</span>
+            </div>
+            <h3>bear_data_export_bundle</h3>
+            <p data-i18n="project.bearData">Python CLI exporter for Binance Spot OHLCV market data to CSV, built for repeatable data collection workflows.</p>
+            <div class="card-links">
+              <a href="https://github.com/dturovskiy/bear_data_export_bundle" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="tag" data-i18n="tags.bots">Bots</span>
+              <span class="status" data-i18n="status.public">Public</span>
+            </div>
+            <h3>Trading bot systems</h3>
+            <p data-i18n="project.tradingBots">Trading and automation bot repositories used as documentation hubs, experiments, and operational tooling prototypes.</p>
+            <div class="card-links">
+              <a href="https://github.com/dturovskiy/TradingBinanceBot" target="_blank" rel="noopener">TradingBinanceBot</a>
+              <a href="https://github.com/dturovskiy/DeusBinanceBot" target="_blank" rel="noopener">DeusBinanceBot</a>
+              <a href="https://github.com/dturovskiy/BinanceConvertRangeBot" target="_blank" rel="noopener">RangeBot</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="tag" data-i18n="tags.android">Android apps</span>
+              <span class="status" data-i18n="status.downloads">Downloads</span>
+            </div>
+            <h3>NotesApp & CalculatorApp</h3>
+            <p data-i18n="project.androidApps">Small Android utilities available as direct APK downloads from this site.</p>
+            <div class="card-links">
+              <a href="#downloads" data-i18n="links.downloads">Downloads</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="tag" data-i18n="tags.productivity">Productivity</span>
+              <span class="status" data-i18n="status.contributor">Contributor</span>
+            </div>
+            <h3>HabitsBuilder</h3>
+            <p data-i18n="project.habits">C# habit tracker work with reminders and Google Calendar integration, included as contributor/project experience.</p>
+            <div class="card-links">
+              <a href="https://github.com/dturovskiy/Habits_Builder" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="downloads" class="section downloads-section">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="downloads.eyebrow">Android utilities</p>
+          <h2 data-i18n="downloads.title">Download DeusApps APKs</h2>
+          <p data-i18n="downloads.lead">Choose an app, review its features, and download the APK directly.</p>
+        </div>
+
+        <div class="app-showcase">
+          <div class="app-tabs" role="tablist" aria-label="Android apps">
+            <button class="app-tab active" type="button" data-app="notes" role="tab" aria-selected="true">
+              <img src="images/NotesApp.svg" alt="" class="tab-icon">
+              <span data-i18n="apps.notes.name">Notes App</span>
+            </button>
+            <button class="app-tab" type="button" data-app="calculator" role="tab" aria-selected="false">
+              <img src="images/CalculatorApp.svg" alt="" class="tab-icon">
+              <span data-i18n="apps.calculator.name">Calculator App</span>
+            </button>
+          </div>
+
+          <article class="app-detail">
+            <div class="app-visual">
+              <img id="selected-app-icon" src="images/NotesApp.svg" alt="Notes App icon" class="app-icon large">
+            </div>
+            <div class="app-copy">
+              <p class="eyebrow small" data-i18n="downloads.selected">Selected app</p>
+              <h3 id="selected-app-title">Notes App</h3>
+              <p id="selected-app-description">Application for storing notes.</p>
+              <ul id="selected-app-features" class="feature-list"></ul>
+              <a id="selected-app-download" href="downloads/NotesApp.apk" class="button primary" download="NotesApp.apk">Download NotesApp.apk</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="contact" class="section contact-section profiles-section">
+        <div class="section-heading profiles-heading">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Profiles</p>
+          <h2 data-i18n="contact.title">Profiles</h2>
+          <p data-i18n="contact.lead">Public profiles, project pages, and channels for DeusApps.</p>
+        </div>
+
+        <div class="profile-link-row" aria-label="Public profile links">
+          <a class="social-button social-github" href="https://github.com/dturovskiy" target="_blank" rel="noopener">
+            <img src="images/icon-github.png" alt="" aria-hidden="true" class="social-button-icon">
+            <span>GitHub</span>
+          </a>
+          <a class="social-button social-linkedin" href="https://www.linkedin.com/in/denysturovskiy" target="_blank" rel="noopener">
+            <img src="images/icon-linkedin.png" alt="" aria-hidden="true" class="social-button-icon">
+            <span>LinkedIn</span>
+          </a>
+          <a class="social-button social-threads" href="https://www.threads.com/@d.turovskiy?hl=uk" target="_blank" rel="noopener">
+            <img src="images/icon-threads.png" alt="" aria-hidden="true" class="social-button-icon">
+            <span>Threads</span>
+          </a>
+        </div>
+
+        <div class="profiles-qr-grid" aria-label="Profile QR codes">
+          <article class="profile-qr-card profile-qr-github">
+            <div class="profile-qr-head">
+              <span class="profile-service-icon"><img src="images/icon-github.png" alt="" aria-hidden="true"></span>
+              <div>
+                <h3>GitHub</h3>
+                <p data-i18n="contact.githubText">Code, releases, issues, and active repositories.</p>
+              </div>
+            </div>
+            <div class="profile-qr-frame">
+              <img src="images/qr-github.png" alt="GitHub QR code" loading="lazy">
+            </div>
+          </article>
+
+          <article class="profile-qr-card profile-qr-linkedin">
+            <div class="profile-qr-head">
+              <span class="profile-service-icon"><img src="images/icon-linkedin.png" alt="" aria-hidden="true"></span>
+              <div>
+                <h3>LinkedIn</h3>
+                <p data-i18n="contact.linkedinText">Professional profile, project context, and technical updates.</p>
+              </div>
+            </div>
+            <div class="profile-qr-frame">
+              <img src="images/qr-linkedin.png" alt="LinkedIn QR code" loading="lazy">
+            </div>
+          </article>
+
+          <article class="profile-qr-card profile-qr-threads">
+            <div class="profile-qr-head">
+              <span class="profile-service-icon"><img src="images/icon-threads.png" alt="" aria-hidden="true"></span>
+              <div>
+                <h3>Threads</h3>
+                <p data-i18n="contact.threadsText">Short notes, progress updates, and work-in-progress posts.</p>
+              </div>
+            </div>
+            <div class="profile-qr-frame">
+              <img src="images/qr-threads.png" alt="Threads QR code" loading="lazy">
+            </div>
+          </article>
+
+          <article class="profile-qr-card profile-qr-telegram">
+            <div class="profile-qr-head">
+              <span class="profile-service-icon"><img src="images/icon-telegram.png" alt="" aria-hidden="true"></span>
+              <div>
+                <h3>Telegram</h3>
+                <p data-i18n="contact.telegramNote">Announcements, links, and short updates.</p>
+              </div>
+            </div>
+            <div class="profile-qr-frame">
+              <img src="images/qr-telegram.png" alt="Telegram QR code" loading="lazy">
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span data-i18n="footer.copy">© 2026 DeusApps. Practical tools, apps, and workflow utilities.</span>
+      <a href="https://github.com/dturovskiy/deusapps.store" target="_blank" rel="noopener" data-i18n="footer.source">Source on GitHub</a>
+    </footer>
   </div>
-
-  <header>
-    <div class="logo">
-      <img src="logo.svg" alt="Логотип" data-lang="logoAlt">
-    </div>
-    <h1 data-lang="title">Deus Apps Store</h1>
-    <p data-lang="description">Потужні інструменти для вашого навчання</p>
-  </header>
-
-  <main>
-    <section class="download">
-      <h2 data-lang="download">Оберіть програму для завантаження</h2>
-      
-      <div class="app-selector">
-        <div class="app-option active" data-app="notes">
-          <img src="images/NotesApp.svg" alt="Notes App" class="app-icon">
-          <div class="app-name" data-lang="appNames.notes">Notes App</div>
-        </div>
-        <div class="app-option" data-app="calculator">
-          <img src="images/CalculatorApp.svg" alt="Calculator" class="app-icon">
-          <div class="app-name" data-lang="appNames.calculator">Calculator</div>
-        </div>
-      </div>
-      
-      <div class="download-container">
-        <div id="notes-download" class="app-download">
-          <h3 data-lang="appNames.notes">Notes App</h3>
-          <p data-lang="appDescriptions.notes">Додаток для зберігання нотаток</p>
-          <a href="downloads/NotesApp.apk" class="download-button" data-lang="downloadButton" download="NotesApp.apk">Завантажити</a>
-        </div>
-        
-        <div id="calculator-download" class="app-download hidden">
-          <h3 data-lang="appNames.calculator">Calculator</h3>
-          <p data-lang="appDescriptions.calculator">Простий та зручний калькулятор</p>
-          <a href="downloads/CalculatorApp.apk" class="download-button" data-lang="downloadButton" download="Calculator.apk">Завантажити</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="features">
-      <h2 data-lang="featuresTitle">Основні можливості</h2>
-      <div id="notes-features">
-        <ul>
-          <li data-lang="notesFeatures[0]">Зберігання основних тем пройденого матеріалу</li>
-          <li data-lang="notesFeatures[1]">Підтримка кількох мов</li>
-          <li data-lang="notesFeatures[2]">Можливість змінити тему застосунку Світла/Темна</li>
-        </ul>
-      </div>
-      <div id="calculator-features" class="hidden">
-        <ul>
-          <li data-lang="calcFeatures[0]">Базові математичні операції</li>
-          <li data-lang="calcFeatures[1]">Наукові функції</li>
-          <li data-lang="calcFeatures[2]">Історія обчислень</li>
-          <li data-lang="calcFeatures[3]">Підтримка темної теми</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="contact">
-      <h2>
-        <span data-lang="contactTitle">Зв'яжіться з нами в</span>
-        <a href="https://t.me/+txzt-iYnNDhhNjM8" target="_blank">Telegram</a>
-      </h2>
-      <div class="qr-code">
-        <img src="qr-code.png" alt="QR Code" style="width: 150px;" data-lang="qrAlt">
-        <p data-lang="qrText">Відскануйте QR-код, щоб зв'язатися</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p data-lang="footerText">&copy; 2023 Deus Apps Store. Усі права захищені.</p>
-  </footer>
-
 </body>
 </html>

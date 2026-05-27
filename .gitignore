@@ -1,0 +1,4 @@
+.local/
+README-PATCH.md
+*.bak
+*.tmp
