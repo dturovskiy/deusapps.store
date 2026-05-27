@@ -553,10 +553,6 @@ h3 { font-size: 1.35rem; }
 }
 
 
-
-
-
-
 /* === Social contact section === */
 .contact-section {
   padding-top: clamp(3rem, 6vw, 5.5rem);
@@ -981,10 +977,6 @@ section:has([data-i18n="hero.title"]) .badge {
   }
 }
 /* === End final compact hero === */
-
-
-
-
 
 
 /* === Final profiles QR visual polish === */
@@ -1938,3 +1930,373 @@ a[href*="threads"] img {
   }
 }
 /* === End QR layout and smooth surfaces === */
+
+/* deusapps-header-smoothness-patch: soften lower edge of the top navigation strip */
+:where(header:first-of-type, .site-header, .app-header, .topbar, .top-nav, .navbar, .nav-bar) {
+  isolation: isolate;
+  overflow: visible;
+  border-bottom-left-radius: clamp(20px, 2.6vw, 34px) !important;
+  border-bottom-right-radius: clamp(20px, 2.6vw, 34px) !important;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.72));
+  -webkit-backdrop-filter: blur(18px) saturate(1.14);
+  backdrop-filter: blur(18px) saturate(1.14);
+  box-shadow:
+    0 14px 36px rgba(15, 23, 42, 0.08),
+    0 1px 0 rgba(255, 255, 255, 0.78) inset;
+}
+
+:where(header:first-of-type, .site-header, .app-header, .topbar, .top-nav, .navbar, .nav-bar)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -28px;
+  height: 28px;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(238, 245, 255, 0.72), rgba(238, 245, 255, 0));
+}
+
+:where(header:first-of-type, .site-header, .app-header, .topbar, .top-nav, .navbar, .nav-bar) > :where(nav, div) {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+@media (max-width: 640px) {
+  :where(header:first-of-type, .site-header, .app-header, .topbar, .top-nav, .navbar, .nav-bar) {
+    border-bottom-left-radius: 22px !important;
+    border-bottom-right-radius: 22px !important;
+  }
+}
+
+/* deusapps-header-liquid-glass-v7:start */
+/*
+  v7:
+  - existing header width/layout remains untouched;
+  - the visible liquid-glass surface extends by 1cm on each side via pseudo-elements;
+  - the content is not squeezed;
+  - icons use the provided PNG files and invert by theme.
+*/
+:root {
+  --deusapps-header-side-extension: 1cm;
+  --deusapps-header-radius: 0 0 24px 24px;
+
+  --deusapps-header-glass-top: rgba(255, 255, 255, 0.26);
+  --deusapps-header-glass-mid: rgba(255, 255, 255, 0.16);
+  --deusapps-header-glass-bottom: rgba(255, 255, 255, 0.07);
+  --deusapps-header-border: rgba(205, 214, 228, 0.26);
+  --deusapps-header-highlight: rgba(255, 255, 255, 0.34);
+
+  --deusapps-header-shadow: 0 9px 24px rgba(26, 34, 55, 0.065),
+    0 2px 7px rgba(26, 34, 55, 0.025);
+
+  --deusapps-header-edge-1: rgba(255, 255, 255, 0.10);
+  --deusapps-header-edge-2: rgba(246, 249, 255, 0.045);
+
+  --deusapps-header-icon-bg: rgba(255, 255, 255, 0.20);
+  --deusapps-header-icon-border: rgba(205, 214, 228, 0.32);
+  --deusapps-header-icon-filter: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --deusapps-header-glass-top: rgba(22, 30, 52, 0.20);
+    --deusapps-header-glass-mid: rgba(13, 19, 36, 0.12);
+    --deusapps-header-glass-bottom: rgba(8, 12, 24, 0.045);
+    --deusapps-header-border: rgba(154, 168, 198, 0.095);
+    --deusapps-header-highlight: rgba(255, 255, 255, 0.055);
+
+    --deusapps-header-shadow: 0 10px 26px rgba(0, 0, 0, 0.12),
+      0 2px 7px rgba(0, 0, 0, 0.055);
+
+    --deusapps-header-edge-1: rgba(110, 132, 190, 0.045);
+    --deusapps-header-edge-2: rgba(8, 12, 24, 0.012);
+
+    --deusapps-header-icon-bg: rgba(255, 255, 255, 0.04);
+    --deusapps-header-icon-border: rgba(154, 168, 198, 0.12);
+    --deusapps-header-icon-filter: invert(1) brightness(1.08);
+  }
+}
+
+html.dark,
+body.dark,
+[data-theme="dark"],
+body[data-theme="dark"] {
+  --deusapps-header-glass-top: rgba(22, 30, 52, 0.20);
+  --deusapps-header-glass-mid: rgba(13, 19, 36, 0.12);
+  --deusapps-header-glass-bottom: rgba(8, 12, 24, 0.045);
+  --deusapps-header-border: rgba(154, 168, 198, 0.095);
+  --deusapps-header-highlight: rgba(255, 255, 255, 0.055);
+
+  --deusapps-header-shadow: 0 10px 26px rgba(0, 0, 0, 0.12),
+    0 2px 7px rgba(0, 0, 0, 0.055);
+
+  --deusapps-header-edge-1: rgba(110, 132, 190, 0.045);
+  --deusapps-header-edge-2: rgba(8, 12, 24, 0.012);
+
+  --deusapps-header-icon-bg: rgba(255, 255, 255, 0.04);
+  --deusapps-header-icon-border: rgba(154, 168, 198, 0.12);
+  --deusapps-header-icon-filter: invert(1) brightness(1.08);
+}
+
+header[data-deusapps-liquid-header="true"] {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: var(--deusapps-header-radius) !important;
+  isolation: isolate;
+  overflow: visible !important;
+}
+
+header[data-deusapps-liquid-header="true"] > * {
+  position: relative;
+  z-index: 2;
+}
+
+header[data-deusapps-liquid-header="true"]::before,
+header[data-deusapps-liquid-header="true"]::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+header[data-deusapps-liquid-header="true"]::before {
+  top: 0;
+  bottom: 0;
+  left: calc(-1 * var(--deusapps-header-side-extension));
+  right: calc(-1 * var(--deusapps-header-side-extension));
+  z-index: 1;
+  border-radius: var(--deusapps-header-radius);
+  border: 1px solid var(--deusapps-header-border);
+  border-top-color: transparent;
+
+  background:
+    radial-gradient(circle at 12% -20%, var(--deusapps-header-highlight), transparent 38%),
+    linear-gradient(
+      180deg,
+      var(--deusapps-header-glass-top) 0%,
+      var(--deusapps-header-glass-mid) 58%,
+      var(--deusapps-header-glass-bottom) 100%
+    );
+
+  -webkit-backdrop-filter: blur(30px) saturate(1.18);
+  backdrop-filter: blur(30px) saturate(1.18);
+
+  box-shadow: var(--deusapps-header-shadow);
+}
+
+header[data-deusapps-liquid-header="true"]::after {
+  left: calc(-1 * var(--deusapps-header-side-extension) + 18px);
+  right: calc(-1 * var(--deusapps-header-side-extension) + 18px);
+  bottom: -22px;
+  z-index: 1;
+  height: 34px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: linear-gradient(
+    180deg,
+    var(--deusapps-header-edge-1) 0%,
+    var(--deusapps-header-edge-2) 44%,
+    transparent 100%
+  );
+  filter: blur(16px);
+  opacity: 0.72;
+}
+
+header[data-deusapps-liquid-header="true"] .deusapps-header-icon-control {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 34px !important;
+  height: 34px !important;
+  min-width: 34px !important;
+  min-height: 34px !important;
+  padding: 0 !important;
+  border-radius: 999px !important;
+  background: var(--deusapps-header-icon-bg) !important;
+  border: 1px solid var(--deusapps-header-icon-border) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(1.12) !important;
+  backdrop-filter: blur(14px) saturate(1.12) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.10), 0 3px 10px rgba(16, 24, 40, 0.035) !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  text-decoration: none !important;
+}
+
+header[data-deusapps-liquid-header="true"] .deusapps-header-icon-control img {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 19px !important;
+  max-height: 19px !important;
+  object-fit: contain !important;
+  image-rendering: auto !important;
+  filter: var(--deusapps-header-icon-filter) !important;
+  opacity: 0.9;
+}
+
+header[data-deusapps-liquid-header="true"] .deusapps-header-icon-control:hover img {
+  opacity: 1;
+}
+
+header[data-deusapps-liquid-header="true"] .deusapps-header-icon-control:focus-visible {
+  outline: 2px solid rgba(129, 140, 248, 0.50) !important;
+  outline-offset: 2px !important;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --deusapps-header-side-extension: 14px;
+    --deusapps-header-radius: 0 0 20px 20px;
+  }
+
+  header[data-deusapps-liquid-header="true"]::after {
+    left: calc(-1 * var(--deusapps-header-side-extension) + 10px);
+    right: calc(-1 * var(--deusapps-header-side-extension) + 10px);
+    bottom: -18px;
+    height: 28px;
+    filter: blur(14px);
+  }
+
+  header[data-deusapps-liquid-header="true"] .deusapps-header-icon-control {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    min-height: 32px !important;
+  }
+
+  header[data-deusapps-liquid-header="true"] .deusapps-header-icon-control img {
+    max-width: 18px !important;
+    max-height: 18px !important;
+  }
+}
+/* deusapps-header-liquid-glass-v7:end */
+
+/* deusapps-header-icon-theme-v8:start */
+/*
+  Fix only header icon colors:
+  - light visual theme => original black PNGs;
+  - dark visual theme => inverted white PNGs.
+  This intentionally overrides the earlier prefers-color-scheme based filter
+  without changing the header glass/layout.
+*/
+header[data-deusapps-icon-theme="light"] .deusapps-header-icon-control img {
+  filter: none !important;
+  opacity: 0.92 !important;
+}
+
+header[data-deusapps-icon-theme="dark"] .deusapps-header-icon-control img {
+  filter: invert(1) brightness(1.08) contrast(1.02) !important;
+  opacity: 0.92 !important;
+}
+
+header[data-deusapps-icon-theme="light"] .deusapps-header-icon-control:hover img,
+header[data-deusapps-icon-theme="dark"] .deusapps-header-icon-control:hover img {
+  opacity: 1 !important;
+}
+/* deusapps-header-icon-theme-v8:end */
+
+/* deusapps-header-hover-v9:start */
+/*
+  Header button hover feedback.
+  Works with the existing v7/v8 glass and icon setup.
+  No layout/width/header opacity changes here.
+*/
+:root {
+  --deusapps-header-nav-hover-bg: rgba(255, 255, 255, 0.58);
+  --deusapps-header-nav-hover-border: rgba(129, 140, 248, 0.32);
+  --deusapps-header-nav-hover-shadow: rgba(79, 70, 229, 0.16);
+  --deusapps-header-nav-hover-color: #1d2740;
+
+  --deusapps-header-icon-hover-bg: rgba(255, 255, 255, 0.42);
+  --deusapps-header-icon-hover-border: rgba(129, 140, 248, 0.34);
+  --deusapps-header-icon-hover-shadow: rgba(79, 70, 229, 0.17);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --deusapps-header-nav-hover-bg: rgba(129, 140, 248, 0.18);
+    --deusapps-header-nav-hover-border: rgba(165, 180, 252, 0.24);
+    --deusapps-header-nav-hover-shadow: rgba(129, 140, 248, 0.18);
+    --deusapps-header-nav-hover-color: rgba(248, 250, 252, 0.98);
+
+    --deusapps-header-icon-hover-bg: rgba(129, 140, 248, 0.16);
+    --deusapps-header-icon-hover-border: rgba(165, 180, 252, 0.26);
+    --deusapps-header-icon-hover-shadow: rgba(129, 140, 248, 0.20);
+  }
+}
+
+html.dark,
+body.dark,
+[data-theme="dark"],
+body[data-theme="dark"],
+header[data-deusapps-icon-theme="dark"] {
+  --deusapps-header-nav-hover-bg: rgba(129, 140, 248, 0.18);
+  --deusapps-header-nav-hover-border: rgba(165, 180, 252, 0.24);
+  --deusapps-header-nav-hover-shadow: rgba(129, 140, 248, 0.18);
+  --deusapps-header-nav-hover-color: rgba(248, 250, 252, 0.98);
+
+  --deusapps-header-icon-hover-bg: rgba(129, 140, 248, 0.16);
+  --deusapps-header-icon-hover-border: rgba(165, 180, 252, 0.26);
+  --deusapps-header-icon-hover-shadow: rgba(129, 140, 248, 0.20);
+}
+
+header[data-deusapps-icon-theme="light"] {
+  --deusapps-header-nav-hover-bg: rgba(255, 255, 255, 0.58);
+  --deusapps-header-nav-hover-border: rgba(129, 140, 248, 0.32);
+  --deusapps-header-nav-hover-shadow: rgba(79, 70, 229, 0.16);
+  --deusapps-header-nav-hover-color: #1d2740;
+
+  --deusapps-header-icon-hover-bg: rgba(255, 255, 255, 0.42);
+  --deusapps-header-icon-hover-border: rgba(129, 140, 248, 0.34);
+  --deusapps-header-icon-hover-shadow: rgba(79, 70, 229, 0.17);
+}
+
+header[data-deusapps-liquid-header="true"] nav :is(a, button, [role="button"]),
+header[data-deusapps-liquid-header="true"] .deusapps-header-icon-control {
+  transition:
+    background-color 170ms ease,
+    border-color 170ms ease,
+    box-shadow 170ms ease,
+    color 170ms ease,
+    opacity 170ms ease,
+    transform 170ms ease,
+    filter 170ms ease !important;
+  will-change: transform;
+}
+
+header[data-deusapps-liquid-header="true"] nav :is(a, button, [role="button"]):hover {
+  background: var(--deusapps-header-nav-hover-bg) !important;
+  border-color: var(--deusapps-header-nav-hover-border) !important;
+  color: var(--deusapps-header-nav-hover-color) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    0 8px 20px var(--deusapps-header-nav-hover-shadow) !important;
+  transform: translateY(-1px);
+}
+
+header[data-deusapps-liquid-header="true"] nav :is(a, button, [role="button"]):active,
+header[data-deusapps-liquid-header="true"] .deusapps-header-icon-control:active {
+  transform: translateY(0) scale(0.98);
+}
+
+header[data-deusapps-liquid-header="true"] .deusapps-header-icon-control:hover {
+  background: var(--deusapps-header-icon-hover-bg) !important;
+  border-color: var(--deusapps-header-icon-hover-border) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    0 8px 20px var(--deusapps-header-icon-hover-shadow) !important;
+  transform: translateY(-1px);
+}
+
+header[data-deusapps-liquid-header="true"] .deusapps-header-icon-control:hover img {
+  opacity: 1 !important;
+  transform: scale(1.08);
+}
+
+header[data-deusapps-liquid-header="true"] nav :is(a, button, [role="button"]):focus-visible,
+header[data-deusapps-liquid-header="true"] .deusapps-header-icon-control:focus-visible {
+  outline: 2px solid rgba(129, 140, 248, 0.58) !important;
+  outline-offset: 3px !important;
+}
+/* deusapps-header-hover-v9:end */
