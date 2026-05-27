@@ -2300,3 +2300,124 @@ header[data-deusapps-liquid-header="true"] .deusapps-header-icon-control:focus-v
   outline-offset: 3px !important;
 }
 /* deusapps-header-hover-v9:end */
+
+/* deusapps-header-single-glass-v11:start */
+/*
+  The visible header glass is now only the outer pseudo-layer from v7.
+  The immediate inner shell keeps layout/flex/padding only; no second glass panel.
+  Nav pill and icon buttons are intentionally not targeted.
+*/
+header[data-deusapps-liquid-header="true"] > :is(
+  .header-inner,
+  .header-content,
+  .header-shell,
+  .header-container,
+  .navbar,
+  .topbar,
+  .nav-shell,
+  .container
+) {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+/*
+  Fallback for projects where the header's first child has no stable class.
+  This removes only the duplicated full-width/shell layer, not nested nav buttons.
+*/
+header[data-deusapps-liquid-header="true"] > div:first-child {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+/*
+  Keep the center navigation pill and right-side icon buttons as separate controls.
+  They should still have hover/active feedback from v9.
+*/
+header[data-deusapps-liquid-header="true"] nav,
+header[data-deusapps-liquid-header="true"] .language-selector,
+header[data-deusapps-liquid-header="true"] .deusapps-header-icon-control {
+  -webkit-backdrop-filter: inherit;
+  backdrop-filter: inherit;
+}
+/* deusapps-header-single-glass-v11:end */
+
+/* deusapps-header-90-percent-v17:start */
+/*
+  Header geometry:
+  - 90% width, centered;
+  - logo/right controls keep 1cm inset from header edge;
+  - glass layer follows the real header bounds.
+*/
+:root {
+  --deusapps-header-content-inset: 1cm;
+  --deusapps-header-side-extension: 0px !important;
+}
+
+header[data-deusapps-liquid-header="true"] {
+  box-sizing: border-box !important;
+  width: 90% !important;
+  max-width: 90% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--deusapps-header-content-inset) !important;
+  padding-right: var(--deusapps-header-content-inset) !important;
+}
+
+header[data-deusapps-liquid-header="true"]::before {
+  left: 0 !important;
+  right: 0 !important;
+}
+
+header[data-deusapps-liquid-header="true"]::after {
+  left: 16px !important;
+  right: 16px !important;
+}
+
+header[data-deusapps-liquid-header="true"] > :is(
+  .header-inner,
+  .header-content,
+  .header-shell,
+  .header-container,
+  .navbar,
+  .topbar,
+  .nav-shell,
+  .container
+),
+header[data-deusapps-liquid-header="true"] > div:first-child {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --deusapps-header-content-inset: 14px;
+    --deusapps-header-side-extension: 0px !important;
+  }
+
+  header[data-deusapps-liquid-header="true"] {
+    width: calc(100vw - 16px) !important;
+    max-width: calc(100vw - 16px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: var(--deusapps-header-content-inset) !important;
+    padding-right: var(--deusapps-header-content-inset) !important;
+  }
+
+  header[data-deusapps-liquid-header="true"]::after {
+    left: 10px !important;
+    right: 10px !important;
+  }
+}
+/* deusapps-header-90-percent-v17:end */
