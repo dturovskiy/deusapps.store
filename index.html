@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-lang="title">Deus Apps Store</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <script src="translations.js"></script>
+  <meta name='freelancehunt' content='efd60025ba28f75'>
+  
+</head>
+<body>
+  <!-- Кнопка переключення теми -->
+  <button id="theme-toggle" aria-label="Переключити тему">
+    <span id="theme-icon">🌙</span>
+  </button>
+
+  <div class="language-selector">
+    <button id="language-toggle" aria-label="Переключити мову">
+      <span id="language-icon">🌐</span>
+    </button>
+    <ul id="language-menu" class="language-menu">
+      <!-- Список мов буде додано динамічно -->
+    </ul>
+  </div>
+
+  <header>
+    <div class="logo">
+      <img src="logo.svg" alt="Логотип" data-lang="logoAlt">
+    </div>
+    <h1 data-lang="title">Deus Apps Store</h1>
+    <p data-lang="description">Потужні інструменти для вашого навчання</p>
+  </header>
+
+  <main>
+    <section class="download">
+      <h2 data-lang="download">Оберіть програму для завантаження</h2>
+      
+      <div class="app-selector">
+        <div class="app-option active" data-app="notes">
+          <img src="images/NotesApp.svg" alt="Notes App" class="app-icon">
+          <div class="app-name" data-lang="appNames.notes">Notes App</div>
+        </div>
+        <div class="app-option" data-app="calculator">
+          <img src="images/CalculatorApp.svg" alt="Calculator" class="app-icon">
+          <div class="app-name" data-lang="appNames.calculator">Calculator</div>
+        </div>
+      </div>
+      
+      <div class="download-container">
+        <div id="notes-download" class="app-download">
+          <h3 data-lang="appNames.notes">Notes App</h3>
+          <p data-lang="appDescriptions.notes">Додаток для зберігання нотаток</p>
+          <a href="downloads/NotesApp.apk" class="download-button" data-lang="downloadButton" download="NotesApp.apk">Завантажити</a>
+        </div>
+        
+        <div id="calculator-download" class="app-download hidden">
+          <h3 data-lang="appNames.calculator">Calculator</h3>
+          <p data-lang="appDescriptions.calculator">Простий та зручний калькулятор</p>
+          <a href="downloads/CalculatorApp.apk" class="download-button" data-lang="downloadButton" download="Calculator.apk">Завантажити</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2 data-lang="featuresTitle">Основні можливості</h2>
+      <div id="notes-features">
+        <ul>
+          <li data-lang="notesFeatures[0]">Зберігання основних тем пройденого матеріалу</li>
+          <li data-lang="notesFeatures[1]">Підтримка кількох мов</li>
+          <li data-lang="notesFeatures[2]">Можливість змінити тему застосунку Світла/Темна</li>
+        </ul>
+      </div>
+      <div id="calculator-features" class="hidden">
+        <ul>
+          <li data-lang="calcFeatures[0]">Базові математичні операції</li>
+          <li data-lang="calcFeatures[1]">Наукові функції</li>
+          <li data-lang="calcFeatures[2]">Історія обчислень</li>
+          <li data-lang="calcFeatures[3]">Підтримка темної теми</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>
+        <span data-lang="contactTitle">Зв'яжіться з нами в</span>
+        <a href="https://t.me/+txzt-iYnNDhhNjM8" target="_blank">Telegram</a>
+      </h2>
+      <div class="qr-code">
+        <img src="qr-code.png" alt="QR Code" style="width: 150px;" data-lang="qrAlt">
+        <p data-lang="qrText">Відскануйте QR-код, щоб зв'язатися</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p data-lang="footerText">&copy; 2023 Deus Apps Store. Усі права захищені.</p>
+  </footer>
+
+</body>
+</html>
