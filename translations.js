@@ -9,7 +9,7 @@ window.translations = {
     "hero": {
       "eyebrow": "Independent software lab",
       "title": "Practical tools for servers, workflows, and app experiments.",
-      "lead": "DeusApps collects useful projects: Android utilities, Linux automation, game server tooling, 3D workflow helpers, SaaS foundations, and prototype apps.",
+      "lead": "DeusApps collects useful projects: AI browser tools, Android utilities, Linux automation, game server tooling, 3D workflow helpers, SaaS foundations, Git/GitHub automation, and prototype apps.",
       "primaryCta": "Explore projects",
       "githubCta": "GitHub profile"
     },
@@ -42,6 +42,8 @@ window.translations = {
     },
     "project": {
       "armactl": "Python/Linux TUI for installing, repairing, managing, and monitoring Arma Reforger Dedicated Server.",
+      "aiLimits": "Chrome toolbar extension for monitoring Codex and Claude usage limits with direct browser-side refresh, dark/light themes, and local-first privacy boundaries.",
+      "commitChart": "Reusable local Git commit activity chart generator that produces a self-contained HTML visualization for any repository.",
       "objImporter": "Geometry-only Blender OBJ importer for SketchUp workflows, with import presets, orientation fixes, and cleanup helpers.",
       "mia": "TypeScript modular SaaS foundation for municipal administrative workflows, clean app architecture, and internal platform experiments.",
       "unity": "Gameplay experiments and Unity/C# prototypes, including miner, tower, and arcade-style project work.",
@@ -102,7 +104,7 @@ window.translations = {
     "hero": {
       "eyebrow": "Незалежна software-майстерня",
       "title": "Практичні інструменти для серверів, робочих процесів і експериментів із застосунками.",
-      "lead": "DeusApps збирає корисні проєкти: Android-утиліти, Linux-автоматизацію, інструменти для ігрових серверів, помічники для 3D-процесів, SaaS-основи та прототипи застосунків.",
+      "lead": "DeusApps збирає корисні проєкти: AI-інструменти для браузера, Android-утиліти, Linux-автоматизацію, інструменти для ігрових серверів, помічники для 3D-процесів, SaaS-основи, Git/GitHub-автоматизацію та прототипи застосунків.",
       "primaryCta": "Переглянути проєкти",
       "githubCta": "Профіль GitHub"
     },
@@ -135,6 +137,8 @@ window.translations = {
     },
     "project": {
       "armactl": "Python/Linux TUI для встановлення, відновлення, керування та моніторингу Arma Reforger Dedicated Server.",
+      "aiLimits": "Chrome-розширення для моніторингу лімітів Codex і Claude з прямим оновленням у браузері, темною/світлою темою та local-first приватністю.",
+      "commitChart": "Локальний генератор Git-графіка активності комітів, що створює самодостатню HTML-візуалізацію для будь-якого репозиторію.",
       "objImporter": "Blender OBJ-імпортер тільки для геометрії у SketchUp-процесах, з пресетами імпорту, виправленням орієнтації та очищенням сцени.",
       "mia": "Модульна SaaS-основа на TypeScript для муніципальних адміністративних процесів, чистої архітектури застосунків і внутрішніх platform-експериментів.",
       "unity": "Геймплейні експерименти й Unity/C# прототипи, включно з miner, tower та arcade-style проєктами.",
@@ -195,7 +199,7 @@ window.translations = {
     "hero": {
       "eyebrow": "Unabhängiges Softwarelabor",
       "title": "Praktische Werkzeuge für Server, Workflows und App-Experimente.",
-      "lead": "DeusApps bündelt nützliche Projekte: Android-Utilities, Linux-Automatisierung, Tools für Gameserver, 3D-Workflow-Helfer, SaaS-Grundlagen und App-Prototypen.",
+      "lead": "DeusApps bündelt nützliche Projekte: AI-Browser-Tools, Android-Utilities, Linux-Automatisierung, Tools für Gameserver, 3D-Workflow-Helfer, SaaS-Grundlagen, Git/GitHub-Automatisierung und App-Prototypen.",
       "primaryCta": "Projekte ansehen",
       "githubCta": "GitHub-Profil"
     },
@@ -228,6 +232,8 @@ window.translations = {
     },
     "project": {
       "armactl": "Python/Linux-TUI zum Installieren, Reparieren, Verwalten und Überwachen eines Arma Reforger Dedicated Servers.",
+      "aiLimits": "Chrome-Toolbar-Erweiterung zum Überwachen von Codex- und Claude-Nutzungslimits mit direkter Browser-Aktualisierung, Hell/Dunkel-Modus und local-first Datenschutz.",
+      "commitChart": "Lokaler Git-Commit-Aktivitätschart-Generator, der eine eigenständige HTML-Visualisierung für beliebige Repositories erstellt.",
       "objImporter": "Blender-OBJ-Importer nur für Geometrie in SketchUp-Workflows, mit Import-Presets, Ausrichtungskorrekturen und Cleanup-Hilfen.",
       "mia": "Modulare SaaS-Grundlage in TypeScript für kommunale Verwaltungsabläufe, saubere App-Architektur und interne Plattformexperimente.",
       "unity": "Gameplay-Experimente und Unity/C#-Prototypen, einschließlich Miner-, Tower- und Arcade-Projektarbeit.",
@@ -288,7 +294,7 @@ window.translations = {
     "hero": {
       "eyebrow": "Niezależne laboratorium software",
       "title": "Praktyczne narzędzia do serwerów, workflow i eksperymentów z aplikacjami.",
-      "lead": "DeusApps zbiera użyteczne projekty: narzędzia Android, automatyzację Linux, tooling dla serwerów gier, pomocniki workflow 3D, fundamenty SaaS i prototypy aplikacji.",
+      "lead": "DeusApps zbiera użyteczne projekty: narzędzia AI do przeglądarki, narzędzia Android, automatyzację Linux, tooling dla serwerów gier, pomocniki workflow 3D, fundamenty SaaS, automatyzację Git/GitHub i prototypy aplikacji.",
       "primaryCta": "Zobacz projekty",
       "githubCta": "Profil GitHub"
     },
@@ -321,6 +327,8 @@ window.translations = {
     },
     "project": {
       "armactl": "Python/Linux TUI do instalowania, naprawiania, zarządzania i monitorowania Arma Reforger Dedicated Server.",
+      "aiLimits": "Rozszerzenie Chrome do monitorowania limitów Codex i Claude z bezpośrednim odświeżaniem w przeglądarce, trybem jasnym/ciemnym i prywatnością local-first.",
+      "commitChart": "Lokalny generator wykresu aktywności commitów Git, który tworzy samodzielną wizualizację HTML dla dowolnego repozytorium.",
       "objImporter": "Importer Blender OBJ tylko dla geometrii w workflow SketchUp, z presetami importu, poprawkami orientacji i narzędziami czyszczenia.",
       "mia": "Modularny fundament SaaS w TypeScript dla miejskich procesów administracyjnych, czystej architektury aplikacji i wewnętrznych eksperymentów platformowych.",
       "unity": "Eksperymenty gameplayowe i prototypy Unity/C#, w tym prace nad projektami typu miner, tower i arcade.",
@@ -381,7 +389,7 @@ window.translations = {
     "hero": {
       "eyebrow": "Laboratoire logiciel indépendant",
       "title": "Des outils pratiques pour les serveurs, les workflows et les expérimentations d’apps.",
-      "lead": "DeusApps rassemble des projets utiles : utilitaires Android, automatisation Linux, outils pour serveurs de jeu, assistants de workflow 3D, bases SaaS et prototypes d’applications.",
+      "lead": "DeusApps rassemble des projets utiles : outils IA pour navigateur, utilitaires Android, automatisation Linux, outils pour serveurs de jeu, assistants de workflow 3D, bases SaaS, automatisation Git/GitHub et prototypes d’applications.",
       "primaryCta": "Explorer les projets",
       "githubCta": "Profil GitHub"
     },
@@ -414,6 +422,8 @@ window.translations = {
     },
     "project": {
       "armactl": "TUI Python/Linux pour installer, réparer, gérer et surveiller un Arma Reforger Dedicated Server.",
+      "aiLimits": "Extension Chrome de barre d’outils pour suivre les limites Codex et Claude avec actualisation directe côté navigateur, thèmes clair/sombre et confidentialité local-first.",
+      "commitChart": "Générateur local de graphique d’activité Git qui produit une visualisation HTML autonome pour n’importe quel dépôt.",
       "objImporter": "Importateur OBJ Blender limité à la géométrie pour les workflows SketchUp, avec presets d’import, corrections d’orientation et aides au nettoyage.",
       "mia": "Base SaaS modulaire en TypeScript pour les workflows administratifs municipaux, une architecture d’app propre et des expérimentations de plateforme internes.",
       "unity": "Expérimentations de gameplay et prototypes Unity/C#, notamment des travaux de type miner, tower et arcade.",
