@@ -88,11 +88,13 @@ https://dturovskiy.github.io/deusapps.store/
 - GitHub: https://github.com/dturovskiy
 - LinkedIn: https://www.linkedin.com/in/denysturovskiy
 - Threads: https://www.threads.com/@d.turovskiy?hl=uk
+- Discord: https://discord.gg/UvWVVqKnYm
 
 ## Profiles
 
 - GitHub: https://github.com/dturovskiy
 - LinkedIn: https://www.linkedin.com/in/denysturovskiy
 - Threads: https://www.threads.com/@d.turovskiy?hl=uk
+- Discord: https://discord.gg/UvWVVqKnYm
 - Telegram: shown on the website as a QR card
 
