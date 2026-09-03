@@ -1,6 +1,6 @@
-# DeusApps Store
+# Deus Apps Studio
 
-Static website for **DeusApps** — a hub for practical apps, AI browser tools, developer utilities, Linux automation, game/server tooling, 3D workflow helpers, SaaS foundations, Git/GitHub automation, and experiments.
+Static website for **Deus Apps Studio** — an independent software studio building practical developer tools, platform infrastructure, Python/Linux automation, MCP and AI-assisted engineering workflows, TypeScript platform foundations, browser utilities, and selected 3D/game-development tools.
 
 ## Website
 
@@ -22,7 +22,7 @@ Public profiles, project pages, and channels for DeusApps.
 
 - **armactl** — installer, manager, TUI, and optional Telegram bot for Arma Reforger Dedicated Server on Ubuntu.
 - **Deus AI Limits Extension** — Chrome toolbar extension for monitoring Codex and Claude usage limits.
-- **Deus Commit Chart** — reusable local Git commit activity chart generator with self-contained HTML output.
+- **Deus Commit Chart** — GitHub Action for static 30/90/365-day contribution charts as README-safe SVGs, with GitHub contribution data, local Git support, and interactive HTML reports.
 - **DeusApps Blender OBJ Importer Lite** — geometry-only Blender OBJ importer for SketchUp workflows.
 - **MIA Platform** — TypeScript modular SaaS foundation.
 - **Unity prototypes** — gameplay experiments and Unity/C# prototypes.
@@ -86,6 +86,7 @@ https://dturovskiy.github.io/deusapps.store/
 
 - Website: https://dturovskiy.github.io/deusapps.store/
 - GitHub: https://github.com/dturovskiy
+- LinkedIn Studio: https://www.linkedin.com/company/deusapps/
 - LinkedIn: https://www.linkedin.com/in/denysturovskiy
 - Threads: https://www.threads.com/@d.turovskiy?hl=uk
 - Discord: https://discord.gg/UvWVVqKnYm

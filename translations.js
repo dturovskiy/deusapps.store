@@ -7,9 +7,9 @@ window.translations = {
       "contact": "Contact"
     },
     "hero": {
-      "eyebrow": "Independent software lab",
-      "title": "Practical tools for servers, workflows, and app experiments.",
-      "lead": "DeusApps collects useful projects: AI browser tools, Android utilities, Linux automation, game server tooling, 3D workflow helpers, SaaS foundations, Git/GitHub automation, and prototype apps.",
+      "eyebrow": "Independent software studio",
+      "title": "Developer tools, platform infrastructure, and practical workflow software.",
+      "lead": "Deus Apps Studio builds practical software across developer tooling, Python/Linux automation, MCP and AI-assisted engineering, TypeScript platform foundations, browser utilities, and selected 3D/game-development workflows.",
       "primaryCta": "Explore projects",
       "githubCta": "GitHub profile"
     },
@@ -43,7 +43,7 @@ window.translations = {
     "project": {
       "armactl": "Python/Linux TUI for installing, repairing, managing, and monitoring Arma Reforger Dedicated Server.",
       "aiLimits": "Chrome toolbar extension for monitoring Codex and Claude usage limits with direct browser-side refresh, dark/light themes, and local-first privacy boundaries.",
-      "commitChart": "Reusable local Git commit activity chart generator that produces a self-contained HTML visualization for any repository.",
+      "commitChart": "GitHub Action for static 30/90/365-day contribution charts as README-safe SVGs, with GitHub contribution data, local Git support, and interactive HTML reports.",
       "objImporter": "Geometry-only Blender OBJ importer for SketchUp workflows, with import presets, orientation fixes, and cleanup helpers.",
       "mia": "TypeScript modular SaaS foundation for municipal administrative workflows, clean app architecture, and internal platform experiments.",
       "unity": "Gameplay experiments and Unity/C# prototypes, including miner, tower, and arcade-style project work.",
@@ -102,9 +102,9 @@ window.translations = {
       "contact": "Контакти"
     },
     "hero": {
-      "eyebrow": "Незалежна software-майстерня",
-      "title": "Практичні інструменти для серверів, робочих процесів і експериментів із застосунками.",
-      "lead": "DeusApps збирає корисні проєкти: AI-інструменти для браузера, Android-утиліти, Linux-автоматизацію, інструменти для ігрових серверів, помічники для 3D-процесів, SaaS-основи, Git/GitHub-автоматизацію та прототипи застосунків.",
+      "eyebrow": "Незалежна software-студія",
+      "title": "Інструменти для розробників, platform-інфраструктура та практичне ПЗ для робочих процесів.",
+      "lead": "Deus Apps Studio створює практичне ПЗ у напрямах developer tooling, Python/Linux automation, MCP та AI-assisted engineering, TypeScript platform foundations, browser utilities і вибраних 3D/game-development workflow.",
       "primaryCta": "Переглянути проєкти",
       "githubCta": "Профіль GitHub"
     },
@@ -138,7 +138,7 @@ window.translations = {
     "project": {
       "armactl": "Python/Linux TUI для встановлення, відновлення, керування та моніторингу Arma Reforger Dedicated Server.",
       "aiLimits": "Chrome-розширення для моніторингу лімітів Codex і Claude з прямим оновленням у браузері, темною/світлою темою та local-first приватністю.",
-      "commitChart": "Локальний генератор Git-графіка активності комітів, що створює самодостатню HTML-візуалізацію для будь-якого репозиторію.",
+      "commitChart": "GitHub Action для статичних contribution charts за 30/90/365 днів як README-safe SVG, з GitHub contribution data, підтримкою local Git та інтерактивними HTML-звітами.",
       "objImporter": "Blender OBJ-імпортер тільки для геометрії у SketchUp-процесах, з пресетами імпорту, виправленням орієнтації та очищенням сцени.",
       "mia": "Модульна SaaS-основа на TypeScript для муніципальних адміністративних процесів, чистої архітектури застосунків і внутрішніх platform-експериментів.",
       "unity": "Геймплейні експерименти й Unity/C# прототипи, включно з miner, tower та arcade-style проєктами.",
@@ -197,9 +197,9 @@ window.translations = {
       "contact": "Kontakt"
     },
     "hero": {
-      "eyebrow": "Unabhängiges Softwarelabor",
-      "title": "Praktische Werkzeuge für Server, Workflows und App-Experimente.",
-      "lead": "DeusApps bündelt nützliche Projekte: AI-Browser-Tools, Android-Utilities, Linux-Automatisierung, Tools für Gameserver, 3D-Workflow-Helfer, SaaS-Grundlagen, Git/GitHub-Automatisierung und App-Prototypen.",
+      "eyebrow": "Unabhängiges Softwarestudio",
+      "title": "Developer-Tools, Plattform-Infrastruktur und praktische Workflow-Software.",
+      "lead": "Deus Apps Studio entwickelt praktische Software für Developer Tooling, Python/Linux-Automatisierung, MCP und AI-assisted Engineering, TypeScript-Plattformgrundlagen, Browser-Utilities sowie ausgewählte 3D- und Game-Development-Workflows.",
       "primaryCta": "Projekte ansehen",
       "githubCta": "GitHub-Profil"
     },
@@ -233,7 +233,7 @@ window.translations = {
     "project": {
       "armactl": "Python/Linux-TUI zum Installieren, Reparieren, Verwalten und Überwachen eines Arma Reforger Dedicated Servers.",
       "aiLimits": "Chrome-Toolbar-Erweiterung zum Überwachen von Codex- und Claude-Nutzungslimits mit direkter Browser-Aktualisierung, Hell/Dunkel-Modus und local-first Datenschutz.",
-      "commitChart": "Lokaler Git-Commit-Aktivitätschart-Generator, der eine eigenständige HTML-Visualisierung für beliebige Repositories erstellt.",
+      "commitChart": "GitHub Action für statische 30/90/365-Tage-Contribution-Charts als README-sichere SVGs, mit GitHub-Daten, Local-Git-Unterstützung und interaktiven HTML-Berichten.",
       "objImporter": "Blender-OBJ-Importer nur für Geometrie in SketchUp-Workflows, mit Import-Presets, Ausrichtungskorrekturen und Cleanup-Hilfen.",
       "mia": "Modulare SaaS-Grundlage in TypeScript für kommunale Verwaltungsabläufe, saubere App-Architektur und interne Plattformexperimente.",
       "unity": "Gameplay-Experimente und Unity/C#-Prototypen, einschließlich Miner-, Tower- und Arcade-Projektarbeit.",
@@ -292,9 +292,9 @@ window.translations = {
       "contact": "Kontakt"
     },
     "hero": {
-      "eyebrow": "Niezależne laboratorium software",
-      "title": "Praktyczne narzędzia do serwerów, workflow i eksperymentów z aplikacjami.",
-      "lead": "DeusApps zbiera użyteczne projekty: narzędzia AI do przeglądarki, narzędzia Android, automatyzację Linux, tooling dla serwerów gier, pomocniki workflow 3D, fundamenty SaaS, automatyzację Git/GitHub i prototypy aplikacji.",
+      "eyebrow": "Niezależne studio software",
+      "title": "Narzędzia deweloperskie, infrastruktura platformowa i praktyczne oprogramowanie do workflow.",
+      "lead": "Deus Apps Studio tworzy praktyczne oprogramowanie w obszarach developer tooling, automatyzacji Python/Linux, MCP i AI-assisted engineering, fundamentów platform TypeScript, narzędzi przeglądarkowych oraz wybranych workflow 3D i game development.",
       "primaryCta": "Zobacz projekty",
       "githubCta": "Profil GitHub"
     },
@@ -328,7 +328,7 @@ window.translations = {
     "project": {
       "armactl": "Python/Linux TUI do instalowania, naprawiania, zarządzania i monitorowania Arma Reforger Dedicated Server.",
       "aiLimits": "Rozszerzenie Chrome do monitorowania limitów Codex i Claude z bezpośrednim odświeżaniem w przeglądarce, trybem jasnym/ciemnym i prywatnością local-first.",
-      "commitChart": "Lokalny generator wykresu aktywności commitów Git, który tworzy samodzielną wizualizację HTML dla dowolnego repozytorium.",
+      "commitChart": "GitHub Action do statycznych wykresów aktywności 30/90/365 dni jako README-safe SVG, z danymi GitHub, obsługą local Git i interaktywnymi raportami HTML.",
       "objImporter": "Importer Blender OBJ tylko dla geometrii w workflow SketchUp, z presetami importu, poprawkami orientacji i narzędziami czyszczenia.",
       "mia": "Modularny fundament SaaS w TypeScript dla miejskich procesów administracyjnych, czystej architektury aplikacji i wewnętrznych eksperymentów platformowych.",
       "unity": "Eksperymenty gameplayowe i prototypy Unity/C#, w tym prace nad projektami typu miner, tower i arcade.",
@@ -387,9 +387,9 @@ window.translations = {
       "contact": "Contact"
     },
     "hero": {
-      "eyebrow": "Laboratoire logiciel indépendant",
-      "title": "Des outils pratiques pour les serveurs, les workflows et les expérimentations d’apps.",
-      "lead": "DeusApps rassemble des projets utiles : outils IA pour navigateur, utilitaires Android, automatisation Linux, outils pour serveurs de jeu, assistants de workflow 3D, bases SaaS, automatisation Git/GitHub et prototypes d’applications.",
+      "eyebrow": "Studio logiciel indépendant",
+      "title": "Outils développeur, infrastructure de plateforme et logiciels pratiques pour les workflows.",
+      "lead": "Deus Apps Studio développe des logiciels pratiques autour des developer tools, de l’automatisation Python/Linux, de MCP et de l’AI-assisted engineering, des fondations de plateforme TypeScript, des utilitaires navigateur et de certains workflows 3D/game development.",
       "primaryCta": "Explorer les projets",
       "githubCta": "Profil GitHub"
     },
@@ -423,7 +423,7 @@ window.translations = {
     "project": {
       "armactl": "TUI Python/Linux pour installer, réparer, gérer et surveiller un Arma Reforger Dedicated Server.",
       "aiLimits": "Extension Chrome de barre d’outils pour suivre les limites Codex et Claude avec actualisation directe côté navigateur, thèmes clair/sombre et confidentialité local-first.",
-      "commitChart": "Générateur local de graphique d’activité Git qui produit une visualisation HTML autonome pour n’importe quel dépôt.",
+      "commitChart": "GitHub Action pour des graphiques de contributions statiques sur 30/90/365 jours en SVG compatibles README, avec données GitHub, support de Git local et rapports HTML interactifs.",
       "objImporter": "Importateur OBJ Blender limité à la géométrie pour les workflows SketchUp, avec presets d’import, corrections d’orientation et aides au nettoyage.",
       "mia": "Base SaaS modulaire en TypeScript pour les workflows administratifs municipaux, une architecture d’app propre et des expérimentations de plateforme internes.",
       "unity": "Expérimentations de gameplay et prototypes Unity/C#, notamment des travaux de type miner, tower et arcade.",
